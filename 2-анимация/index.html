@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <button>Показать блок</button>
     <div class="message">
@@ -23,7 +25,14 @@
     -->
 
     <script>
-        
+        let buttonMy = document.querySelector('button');
+        let messageMy = document.querySelector('.message');
+        buttonMy.addEventListener('click', function() {
+            messageMy.style.display = 'block';
+            messageMy.classList.add('animate__animated', 'animate__fadeInLeftBig');
+        });
+        console.log(buttonMy);
     </script>
 </body>
+
 </html>
