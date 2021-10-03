@@ -24,14 +24,14 @@
 
     <script>
         'use strict'; // ввожу в ручную всплывает ошибка 
-        let spun = document.querySelectorAll('spun');
+        let spun = document.querySelector('span');
         let fromEl = document.querySelector('input');
         fromEl.addEventListener('change', function(event) {
             spun.textContent = event.target.value;
         });
         // ввожу copyPus все работает
         let span1 = document.querySelector('span1');
-        let fromEl1 = document.getElementById('#from1');
+        let fromEl1 = document.getElementById('from1');
         fromEl1.addEventListener('change', function(event) {
             span1.textContent = event.target.value;
         });
